@@ -1,0 +1,20 @@
+#!/usr/bin/env python
+
+import os
+import subprocess
+import sys
+
+def run_command(cmd):
+	p = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+	ret = os.waitpid(p.pid, 0)[1]
+
+	if ret != 0:
+		raise Exception("Command %s failed, Error message: %s\n" % (cmd, p.stderr.read()))
+
+	else:
+
+		return p.stdout.read()
+
+for cpu in range(0,8):
+	print("CPU #: " + str(cpu))
+	print(run_command("numactl --membind 0 --physcpubind %d /u/csc469h/fall/pub/bin/mccalpin-stream | grep -e Copy -e Scale -e Add -e Triad -e Function" % (cpu)))

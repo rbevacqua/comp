@@ -1,0 +1,87 @@
+#!/usr/bin/env python
+
+import os
+import subprocess
+import sys
+
+from plot import GRAPH
+
+def cmp(i):
+	return i[3]
+
+
+def run_command(cmd):
+	p = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+	ret = os.waitpid(p.pid, 0)[1]
+
+	if ret != 0:
+		raise Exception("Command %s failed, Error message: %s\n" % (cmd, p.stderr.read()))
+
+	else:
+
+		return p.stdout.read()
+
+if len(sys.argv) != 2 or sys.argv[1] < 0:
+	raise Exception("failure in necessary args")
+
+num_inactives = sys.argv[1]
+
+run_command(["make", "part_a2"])
+
+output = run_command(["./part_a2", str(num_inactives)])
+
+# log raw data to txt file
+infile = open("part_a2_output.txt", "w")
+infile.truncate()
+
+infile.write(output)
+
+graph = GRAPH()
+start = 0
+interval_list = []
+
+# parse output results of test
+for line in output.splitlines():
+
+	lst = line.split(' ')
+	type = lst[0]
+	iter = int(lst[1].split(':')[0])
+	proc_num = int(lst[4])
+	start = float(lst[7])
+	end = float(lst[11])
+	dur = float(lst[14])
+
+	interval_list.append((type, iter, proc_num, start, end, dur))
+
+switches = []
+interval_list = sorted(interval_list, key=cmp)
+
+interval_list.pop(0)
+
+last = interval_list[0]
+
+for i in interval_list:
+
+	if last[2] != i[2]:
+		
+		switches.append(i[3]-last[3])
+
+	if i[2] == 0:
+		color = "blue"
+	elif i[2] == 1:
+		color = "yellow"
+	elif i[2] == 2:
+		color = "green"
+	else:
+		color = "red"
+
+	graph.addInterval(i[3], i[4], color)
+
+	last = i
+avg = sum(switches)/len(switches)
+
+print("Context Switch Time: %f" % (avg))
+
+graph.makeGraph("Process Activity", 'part_a2.eps')
+
+
