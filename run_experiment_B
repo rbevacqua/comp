@@ -16,7 +16,8 @@ def run_command(cmd):
 		return p.stdout.read()
 
 infile = open("part_b_output.txt", "w")
-for cpu in range(0,8):
+cpu_nums = [0, 2, 14, 15, 25, 26, 37, 38]
+for cpu in cpu_nums:
 	infile.write("CPU #: " + str(cpu) + "\n")
 	output = run_command(["numactl", "--membind", "0", "--physcpubind", str(cpu), "/u/csc469h/fall/pub/assgn1/bin/mccalpin-stream"])
 	for line in output.splitlines():
