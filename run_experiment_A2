@@ -80,8 +80,8 @@ for i in interval_list:
 	last = i
 avg = sum(switches)/len(switches)
 
-print("Context Switch Time: %f" % (avg))
+print("Average Context Switch Time: %f" % (avg))
 
-graph.makeGraph("Process Activity", 'part_a2.eps')
+graph.makeGraph("Context Switch Activity", 'part_a2.eps')
 
 

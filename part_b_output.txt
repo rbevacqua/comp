@@ -1,0 +1,25 @@
+CPU #: 0
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:            8831.4     0.045566     0.045293     0.046815
+Scale:           8707.4     0.046098     0.045938     0.046404
+Add:            10124.9     0.059405     0.059260     0.059717
+Triad:          10175.2     0.059211     0.058967     0.059805
+CPU #: 1
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:            8870.4     0.045209     0.045094     0.045396
+Scale:           8690.2     0.046141     0.046029     0.046358
+Add:            10160.2     0.059173     0.059054     0.059302
+Triad:          10179.9     0.059142     0.058940     0.059410
+CPU #: 2
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:            8858.2     0.045314     0.045156     0.045752
+Scale:           8712.3     0.046084     0.045912     0.046594
+Add:            10165.0     0.059249     0.059026     0.059381
+Triad:          10171.4     0.059170     0.058989     0.059756
+CPU #: 3
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:            8864.3     0.045266     0.045125     0.045515
+Scale:           8683.4     0.046123     0.046065     0.046195
+Add:            10157.1     0.059194     0.059072     0.059290
+Triad:          10175.9     0.059123     0.058963     0.059340
+CPU #: 4

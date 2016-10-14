@@ -43,22 +43,26 @@ for line in output.splitlines():
 
 	lst = line.split(' ')
 
-	type = lst[0]
-	interval_num = int(lst[1].split(':')[0])
-	dur = float(lst[8].split('(')[1])
+	if lst[0] == "CPU":
+                print(line + "\n")
+        else:
 
-	if interval_num == 0:
-		continue
+                type = lst[0]
+                interval_num = int(lst[1].split(':')[0])
+                dur = float(lst[8].split('(')[1])
 
-	end = start + dur
+                if interval_num == 0:
+                        continue
+
+                end = start + dur
 
 
-	if type == "Active":
-		graph.addInterval(start, end, "blue")
-	else:
-		graph.addInterval(start, end, "red")
+                if type == "Active":
+                        graph.addInterval(start, end, "blue")
+                else:
+                        graph.addInterval(start, end, "red")
 
-	start = end
+                start = end
 
 graph.makeGraph('Tracking Process Activity', 'part_a.eps')
 

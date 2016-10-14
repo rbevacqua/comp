@@ -23,16 +23,16 @@ class GRAPH():
 
 		self.end = max(end, self.end)
 
-	def scriptGNUPlot(self, title, filename, buff):
+	def scriptGNUPlot(self, title, filename, buff, size_x, size_y):
 		buff.write('''
 			set title "%s"
 			set xlabel "Time (ms)"
 			set nokey
 			set noytics
-			set term postscript eps 10
-			set size 0.45, 0.35
+			set term postscript eps 8
+			set size %s, %s
 			set output "%s"
-			''' % (title, filename))
+			''' % (title, size_x, size_y, filename))
 
 		num = 1
 
@@ -48,7 +48,7 @@ class GRAPH():
 
 		buff.write('gnuplot << ---EOF---\n')
 
-		self.scriptGNUPlot(title, filename, buff)
+                self.scriptGNUPlot(title, filename, buff, '0.85', '0.35')
 
 		buff.write('\n')
 

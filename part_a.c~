@@ -29,7 +29,6 @@ int main(int argc, char const *argv[]) {
     pin_process(0);
     
     double cpu_freq = frequency_test();
-    printf("CPU Frequency: %f\n", cpu_freq);
 
     uint64_t *samples = (uint64_t*)malloc(2 * num_inactives * sizeof(uint64_t));
 
