@@ -1,9 +1,10 @@
+
 \documentclass{article}
 \usepackage{fullpage}
 \usepackage{graphicx}
 \usepackage{listings}
 \usepackage{tabularx}
-
+\begin{document}
 \section{Part A: Tracking Process Activity}
 \subsection{Hardware Information}
 
@@ -74,10 +75,21 @@ With Node distances:
 
 \subsection{Test Script}
 
-The results of our script can be found in my_part_b_results.txt and the script itself is ./run_experiment_B
+The results of our script can be found in my\_part\_b\_results.txt and the script itself is ./run_experiment\_B
 
 \subsection{Observations}
 
-From my results file mentioned above by looking at some of the operations from cpus
+From my results file mentioned above by looking at some of the operations from the CPUs below:
+
+\begin{center}
+\begin{tabular}{|l|l|l|l|l|}
+	\hline 
+	CPU & Copy & Scale & Add & Triad \\ \hline
+	0 & 5842.4 & 5819.0 & 6559.7 & 6540.0 \\ \hline
+	2 & 5853.9 & 5785.0 & 6429.5 & 6538.6 \\ \hline
+	14 & 2970.5 & 2970.8 & 3014.5 & 3014.3 \\ \hline
+	15 & 2974.2 & 2971.6 & 3017.1 & 3017.2 \\ \hline
+\end{tabular}
+\end{center}
 
 \end{document}

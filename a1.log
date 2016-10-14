@@ -1,0 +1,219 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2016.10.14)  14 OCT 2016 19:51
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**a1.tex
+(./a1.tex
+LaTeX2e <2011/06/27>
+Babel <3.9h> and hyphenation patterns for 2 languages loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+
+! LaTeX Error: File `fullpage.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: dvips.def on input line 91.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+
+! LaTeX Error: File `listings.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen105
+\extrarowheight=\dimen106
+\NC@list=\toks15
+\extratabsurround=\skip43
+\backup@length=\skip44
+)
+\TX@col@width=\dimen107
+\TX@old@table=\dimen108
+\TX@old@col=\dimen109
+\TX@target=\dimen110
+\TX@delta=\dimen111
+\TX@cols=\count87
+\TX@ftn=\toks16
+)
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 \section
+            {Part A: Tracking Process Activity}
+? 
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 \section{Part A: Tracking Process Activity}
+                                               
+? 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 12.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 12.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.77 The results of our script can be found in my_
+                                                  part_b_results.txt and the...
+
+? 
+! Double subscript.
+l.77 ...s of our script can be found in my_part_b_
+                                                  results.txt and the script...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.78 
+     
+? 
+
+Overfull \hbox (80.69122pt too wide) in paragraph at lines 77--78
+\OT1/cmr/m/n/10 The re-sults of our script can be found in my$[]\OML/cmm/m/it/1
+0 art[][]esults:txtandthescriptitselfis:=run[]xperiment[]$ 
+ []
+
+[1
+
+
+\@writefile{toc}{\contentsline {section}{\numberline {1}Part A: Tracking Proces
+s Activity}{1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Hardware Informati
+on}{1}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Part B: Measuring Numa 
+Effects}{1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Hardware Informati
+on}{1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Initialization}{1}
+}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Test Script}{1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Observations}{1}}
+]
+! I can't find file `a1.aux'.
+\enddocument ...keatletter \@@input \jobname .aux 
+                                                  \fi \@dofilelist \ifdim \f...
+l.94 \end{document}
+                   
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+! I can't find file `a1.aux'.
+\enddocument ...keatletter \@@input \jobname .aux 
+                                                  \fi \@dofilelist \ifdim \f...
+l.94 \end{document}
+                   
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+! I can't find file `a1.aux'.
+\enddocument ...keatletter \@@input \jobname .aux 
+                                                  \fi \@dofilelist \ifdim \f...
+l.94 \end{document}
+                   
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+! I can't find file `a1.aux'.
+\enddocument ...keatletter \@@input \jobname .aux 
+                                                  \fi \@dofilelist \ifdim \f...
+l.94 \end{document}
+                   
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+! I can't find file `a1.aux'.
+\enddocument ...keatletter \@@input \jobname .aux 
+                                                  \fi \@dofilelist \ifdim \f...
+l.94 \end{document}
+                   
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+! I can't find file `a1.aux'.
+\enddocument ...keatletter \@@input \jobname .aux 
+                                                  \fi \@dofilelist \ifdim \f...
+l.94 \end{document}
+                   
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+! I can't find file `a1.aux'.
+\enddocument ...keatletter \@@input \jobname .aux 
+                                                  \fi \@dofilelist \ifdim \f...
+l.94 \end{document}
+                   
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+! I can't find file `a1.aux'.
+\enddocument ...keatletter \@@input \jobname .aux 
+                                                  \fi \@dofilelist \ifdim \f...
+l.94 \end{document}
+                   
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+! Emergency stop.
+\enddocument ...keatletter \@@input \jobname .aux 
+                                                  \fi \@dofilelist \ifdim \f...
+l.94 \end{document}
+                   
+End of file on the terminal!
+
+ 
+Here is how much of TeX's memory you used:
+ 611 strings out of 495029
+ 7325 string characters out of 6181522
+ 62648 words of memory out of 5000000
+ 3883 multiletter control sequences out of 15000+600000
+ 4850 words of font info for 18 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 25i,6n,19p,200b,132s stack positions out of 5000i,500n,10000p,200000b,80000s
+Output written on a1.dvi (1 page, 5052 bytes).
