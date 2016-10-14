@@ -19,3 +19,65 @@
 	Memory & 7874 MB \\ \hline
 \end{tabular}
 \end{center}
+
+
+\section{Part B: Measuring Numa Effects}
+\subsection{Hardware Information}
+
+This experiement was done on the wolf server.
+
+\begin{center}
+\begin{tabular}{|l|l|}
+  	\hline
+  	CPU name & AMD Opteron Processor 6348\\ \hline
+  	CPU speed & 2.80GHz \\ \hline
+  	L1 Cache Size & 64 KB \\ \hline
+	L2 Cache Size & 2048 KB \\ \hline
+	L3 Cache Size & 6144 KB \\ \hline
+	Memory & 64408 MB \\ \hline
+\end{tabular}
+\end{center}
+
+\subsection{Initialization}
+
+Using the \"numactl --hardware\" command, I found that the machine (wolf.cdf) contains 4 nodes 
+
+These nodes have about 12 CPU cores each, represented by the data collected below:
+
+\begin{center}
+\begin{tabular}{|l|l|}
+  \hline
+  Node & CPU \\ \hline
+  0 & 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 \\ \hline
+  2 & 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23 \\ \hline
+  4 & 24, 25, 26, 27, 28, 29, 30 ,31, 32, 33, 34, 35 \\ \hline
+  6 & 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47 \\ \hline
+\end{tabular}
+\end{center}
+
+With Node distances:
+
+\begin{center}
+\begin{tabular}{|l|l|l|l|l|}
+	\hline
+	Node Distances \\ \hline
+	Node & 0 & 2 & 4 & 6 \\ \hline
+  	0 & 10 & 16 & 16 & 16 \\ \hline
+  	2 & 16 & 10 & 16 & 16 \\ \hline
+  	4 & 16 & 16 & 10 & 16 \\ \hline
+  	6 & 16 & 16 & 16 & 10 \\ \hline
+
+\end{tabular}
+\end{center}
+
+
+
+\subsection{Test Script}
+
+The results of our script can be found in my_part_b_results.txt and the script itself is ./run_experiment_B
+
+\subsection{Observations}
+
+From my results file mentioned above by looking at some of the operations from cpus
+
+\end{document}
