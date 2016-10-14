@@ -22,5 +22,5 @@ for cpu in range(0,8):
 	for line in output.splitlines():
 		lst = line.split(' ')
 		if (lst[0] == 'Function' or lst[0] == 'Copy:' or lst[0] == "Scale:" or lst[0] == "Add:" or lst[0] == "Triad:"):
-			infile.write(line)
+			infile.write(line + "\n")
 			
