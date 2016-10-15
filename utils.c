@@ -139,32 +139,3 @@ void print_results(int num_periods, uint64_t start, uint64_t *samples, uint64_t 
 		period_id = period_id + 1;
 	}
 }
-
-float test_uncached(uint64_t cpu_freq){
-  
-  long int CACHE_LINE_SIZE = sysconf(_SC_LEVEL1_DCACHE_LINESIZE);
-  //  printf("%d\n", CACHE_LINE_SIZE);
-  int n = CACHE_LINE_SIZE/4;
-  int array[n][n];
-  start_counter();
-  int i, j;
-  for (i = 0; i < n; i++){
-    for (j = 0; j < n; j++){
-      array[j][i] = array[j][i] * 2;
-    }
-  }
-
-  float uncached = get_ms(get_counter(), cpu_freq);
-
-  start_counter();
-  for (j = 0; j < n; j++){
-    for (i = 0; i < n; i++){
-      array[j][i] = array[j][i] * 2;
-    }
-  }
-
-  float cached= get_ms(get_counter(), cpu_freq);
-  //printf("hello");
-  float delta = uncached - cached;
-  return delta;
-}

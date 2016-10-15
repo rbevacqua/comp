@@ -21,7 +21,7 @@ def run_command(cmd):
 
 		return p.stdout.read()
 
-if len(sys.argv) != 2 or sys.argv[1] < 0:
+if len(sys.argv) > 2 or sys.argv[1] < 0:
 	raise Exception("failure in necessary args")
 
 num_inactives = sys.argv[1]

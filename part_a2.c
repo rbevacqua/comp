@@ -36,8 +36,8 @@ int main(int argc, char *argv[]) {
 	int threshold = 2500;
 	int num_inactives = 0;
 
-	if (argc > 3 || argc < 2) {
-		printf("Usage: ./part_a (num_inactive) [optional num_processes]\n");
+	if (argc > 2) {
+		printf("Usage: ./part_a2 (num_inactive) \n");
         return -1;
 	}
 
