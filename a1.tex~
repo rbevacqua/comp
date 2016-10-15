@@ -27,7 +27,7 @@ This experiment was done on my personal computer, that is running Linux Ubuntu 1
 
 \subsection{Experimenting with CPU Frequency}
 
-In order to measure CPU frequency I caculated multiple sleep calls in a loop so that the ith sleep waits i\/2 seconds and during that time the number of cycles is measured. Once I got multiple frequency measurements I sorted them using quicksort and then tried to find the pair of CPUs that were the closest\/clustered and took the highest measurement of the pair. 
+In order to measure CPU frequency I caculated multiple sleep calls in a loop so that the ith sleep waits $i/2$ seconds and during that time the number of cycles is measured. Once I got multiple frequency measurements I sorted them using quicksort and then tried to find the pair of CPUs that were the closest\/clustered and took the highest measurement of the pair. 
 
 I ended up getting a CPU Frequency of 2294 MHz, which is pretty close to 2.3 GHz.
 
@@ -37,22 +37,23 @@ I determined threshold through running the experimentation multiple times, first
 
 \subsection{Conclusion}
 
-Results for this experiment were placed in a file called part\_a\_output.txt, and was called using run\_experiment\_A 30
+Results for this experiment were placed in a file called part\_a\_output.txt, and was called using run\_experiment\_A 30.
 
-Some measurements below
+Some measurements below: \\
 
-total inactive time \- 0.189322 ms 
+total inactive time,  0.189322 ms \\ 
 
-total time \- 84.064094 ms
-active time \- 83.874772 ms
-average active time \- 2.89223 ms
+total time, 84.064094 ms \\
+active time, 83.874772 ms \\
+average active time, 2.89223 ms \\
+
 
 By observation, since we have a CPU Frequency of 2.3GHz and average active time of 2.89223 ms than we can say an interrupt occurs about every 6,652,129 cycles from (2.89223 * 1000 * 2300). There are also periods that have short durations, such as less than 1 ms, which suggests it is a little inconsistant with regular timer intervals which I suggest are the ones that happen after every 3 to 4 ms activity. These early interrupts could have been due to processes running in the back such as Google Chrome or Text Editor Sublime.
 The total time of the experiment was 84.064094 ms and total interrupt time is 0.189322 ms, Therefore the percentage of time lost due to interrupts was 0.023\% of the total time.
 
 \begin{figure}
 \centering
-\includegraphics[scale=1.75]{part_a.eps}
+\includegraphics[scale=1.25]{part_a.eps}
 \caption{Active \- Interval(BLUE) Inactive \- Interval(RED)}
 \label{fig:parta}
 \end{figure}
@@ -75,7 +76,7 @@ Based on the output of run\_experiment\_A2, the average context switch time is 2
 
 \begin{figure}
 \centering
-\includegraphics[scale=1.75]{part_a2.eps}
+\includegraphics[scale=1.25]{part_a2.eps}
 \caption{Process activity with two child processes}
 \label{fig:parta2}
 \end{figure}
@@ -174,7 +175,8 @@ n_intervals = number of inactive periods for each process to record.
 \subsection{run\_experiment\_B}
 \begin{lstlisting}
 Usage: run_experiment_B
-Outputs the result of running STREAM benchmark while binding memory on NODE 0, and varying the CPU from 0 to 47 at a stride of 6.
+Outputs the result of running STREAM benchmark while binding memory on NODE 0, and
+varying the CPU from 0 to 47 at a stride of 6.
 \end{lstlisting}
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2016.9.8)  14 OCT 2016 22:31
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2016.9.8)  14 OCT 2016 22:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -120,29 +120,43 @@ Overfull \hbox (7.95135pt too wide) in paragraph at lines 40--41
 t[]a[]output.txt, and was called us-ing run[]experiment[]A
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--49
+
+ []
+
 File: part_a.eps Graphic file (type eps)
 <part_a.eps> [1
 
 ]
 File: part_a2.eps Graphic file (type eps)
  <part_a2.eps> [2] [3]
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 166.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 167.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 166.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 167.
 
-Overfull \hbox (16.24992pt too wide) in paragraph at lines 167--168
+Overfull \hbox (16.24992pt too wide) in paragraph at lines 168--169
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (304.25285pt too wide) in paragraph at lines 177--178
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][] 
+Overfull \hbox (22.24998pt too wide) in paragraph at lines 178--179
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [4] (./a1.aux) ) 
@@ -153,6 +167,6 @@ Here is how much of TeX's memory you used:
  5338 multiletter control sequences out of 15000+600000
  4850 words of font info for 18 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 26i,6n,32p,657b,1085s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 26i,6n,32p,657b,1086s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on a1.dvi (4 pages, 13632 bytes).
+Output written on a1.dvi (4 pages, 13616 bytes).
