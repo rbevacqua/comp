@@ -41,11 +41,11 @@ Results for this experiment were placed in a file called part\_a\_output.txt, an
 
 Some measurements below
 
-total inactive time \-\> 0.189322 ms 
+total inactive time \- 0.189322 ms 
 
-total time \-\> 84.064094 ms
-active time \-\> 83.874772 ms
-average active time \-\> 2.89223 ms
+total time \- 84.064094 ms
+active time \- 83.874772 ms
+average active time \- 2.89223 ms
 
 By observation, since we have a CPU Frequency of 2.3GHz and average active time of 2.89223 ms than we can say an interrupt occurs about every 6,652,129 cycles from (2.89223 * 1000 * 2300). There are also periods that have short durations, such as less than 1 ms, which suggests it is a little inconsistant with regular timer intervals which I suggest are the ones that happen after every 3 to 4 ms activity. These early interrupts could have been due to processes running in the back such as Google Chrome or Text Editor Sublime.
 The total time of the experiment was 84.064094 ms and total interrupt time is 0.189322 ms, Therefore the percentage of time lost due to interrupts was 0.023\% of the total time.
@@ -53,7 +53,7 @@ The total time of the experiment was 84.064094 ms and total interrupt time is 0.
 \begin{figure}
 \centering
 \includegraphics[scale=1.75]{part_a.eps}
-\caption{Active \-\> Interval(BLUE) Inactive \-\> Interval(RED)}
+\caption{Active \- Interval(BLUE) Inactive \- Interval(RED)}
 \label{fig:parta}
 \end{figure}
 
@@ -65,7 +65,7 @@ In this section we measure the context switch time. When two share a CPU, the op
 
 \subsection{METHOD}
 
-In the benchmark program part_a2, I start the counter in the parent process, then spawn off a number of child process which begins measuring their own active/inactive periods in the same way as partA1. The intervals collected is processed in scripts/run\_experiment\_A2 to extract the context switch periods as well as plot the activity of each processes in part\_a2.eps. 
+In the benchmark program part\_a2, I start the counter in the parent process, then spawn off a number of child process which begins measuring their own active/inactive periods in the same way as partA1. The intervals collected is processed in scripts/run\_experiment\_A2 to extract the context switch periods as well as plot the activity of each processes in part\_a2.eps. 
 
  
 \subsection{CONCLUSION}
